@@ -8,10 +8,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "generate-definition": "generate-svelte-definitions",
-    "minify": "esbuild ./dist/main.js --bundle --minify --outfile=./dist/main.min.js",
-    "magic": "npm run build && npm run minify && npm run generate-definition",
-    "magic:myke": "nodemon --watch src --exec \"npm run build\""
   },
   "devDependencies": {
     "@eborall/generate-svelte-definitions": "^1.0.12",
