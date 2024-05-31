@@ -64194,7 +64194,7 @@ function IV(s, e, t) {
     e = We(We({}, e), rn(h)), t(3, i = ft(e, n)), "$$scope" in h && t(7, o = h.$$scope);
   }, [l, r, u, i, c, a, f, o];
 }
-class TV extends Mt {
+class iC extends Mt {
   constructor(e) {
     super(), Ct(this, e, IV, MV, _t, { ref: 0 });
   }
@@ -64202,7 +64202,7 @@ class TV extends Mt {
     return this.$$.ctx[0];
   }
 }
-St(TV, {}, ["fallback", "error", "default"], ["ref"], !0);
+St(iC, {}, ["fallback", "error", "default"], ["ref"], !0);
 function h1(s) {
   return Object.prototype.toString.call(s) === "[object Date]";
 }
@@ -64224,7 +64224,7 @@ function iA(s, e, t, n) {
       throw new Error(`Cannot spring ${typeof t} values`);
   }
 }
-function BV(s, e = {}) {
+function TV(s, e = {}) {
   const t = Ft(s), { stiffness: n = 0.15, damping: i = 0.8, precision: r = 0.01 } = e;
   let a, o, l, c = s, u = s, f = 1, h = 0, d = !1;
   function m(g, A = {}) {
@@ -64257,7 +64257,7 @@ function BV(s, e = {}) {
   };
   return _;
 }
-const PV = (s) => ({}), d1 = (s) => ({ ref: (
+const BV = (s) => ({}), d1 = (s) => ({ ref: (
   /*ref*/
   s[0]
 ) });
@@ -64272,7 +64272,7 @@ function p1(s) {
     s[5]
   ];
   let i = {
-    $$slots: { default: [LV] },
+    $$slots: { default: [DV] },
     $$scope: { ctx: s }
   };
   for (let r = 0; r < n.length; r += 1)
@@ -64312,7 +64312,7 @@ function p1(s) {
     }
   };
 }
-function RV(s) {
+function PV(s) {
   let e, t;
   return e = new ee.Mesh({
     props: {
@@ -64352,12 +64352,12 @@ function RV(s) {
     }
   };
 }
-function DV(s) {
+function RV(s) {
   let e, t;
   return e = new ee.Group({
     props: {
       rotation: [Math.PI / 2, 0, 0],
-      $$slots: { default: [RV] },
+      $$slots: { default: [PV] },
       $$scope: { ctx: s }
     }
   }), {
@@ -64383,13 +64383,13 @@ function DV(s) {
     }
   };
 }
-function LV(s) {
+function DV(s) {
   let e, t, n;
   e = new ee.Group({
     props: {
       rotation: [-Math.PI / 2, 0, 0],
       scale: 0,
-      $$slots: { default: [DV] },
+      $$slots: { default: [RV] },
       $$scope: { ctx: s }
     }
   });
@@ -64425,7 +64425,7 @@ function LV(s) {
           /*$$scope*/
           a[8],
           o,
-          PV
+          BV
         ) : Et(
           /*$$scope*/
           a[8]
@@ -64444,7 +64444,7 @@ function LV(s) {
     }
   };
 }
-function kV(s) {
+function LV(s) {
   let e, t, n = (
     /*$gltf*/
     s[1] && p1(s)
@@ -64474,7 +64474,7 @@ function kV(s) {
     }
   };
 }
-function UV(s, e, t) {
+function kV(s, e, t) {
   const n = ["ref"];
   let i = ft(e, n), r, a, { $$slots: o = {}, $$scope: l } = e;
   const c = new Xn(), { gltf: u } = Ud("/src/assets/around_the_world_in_80_models_posts.glb");
@@ -64500,15 +64500,15 @@ function UV(s, e, t) {
     l
   ];
 }
-class iC extends Mt {
+class UV extends Mt {
   constructor(e) {
-    super(), Ct(this, e, UV, kV, _t, { ref: 0 });
+    super(), Ct(this, e, kV, LV, _t, { ref: 0 });
   }
   get ref() {
     return this.$$.ctx[0];
   }
 }
-St(iC, {}, ["default"], ["ref"], !0);
+St(UV, {}, ["default"], ["ref"], !0);
 function FV(s) {
   let e, t;
   return e = new pE({
@@ -64550,7 +64550,7 @@ function OV(s) {
     }
   }), r = new iC({
     props: {
-      scale: 10,
+      scale: 1,
       position: [0, 0, 0],
       "rotation.y": (
         /*rotation*/
@@ -64597,7 +64597,7 @@ function NV(s, e, t) {
   On((o) => {
     t(0, n += o * 0.1);
   }), vQ();
-  const i = BV(1);
+  const i = TV(1);
   return console.log("---> Scene.svelte"), [n, i, () => i.set(1.5), () => i.set(1)];
 }
 class rC extends Mt {

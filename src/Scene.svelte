@@ -33,21 +33,21 @@
         position={[0, 1, 0]}
         shadow-bias={-0.0001}
 />
-<!--<RealPlanet-->
-<!--        scale={1}-->
-<!--        position={[0, 0, 0]}-->
-<!--        rotation.y={rotation}-->
-<!--        on:pointerenter={() => scale.set(1.5)}-->
-<!--        on:pointerleave={() => scale.set(1)}-->
-<!--/>-->
-
-<Around_the_world_in_80_models_posts
-        scale={10}
+<RealPlanet
+        scale={1}
         position={[0, 0, 0]}
         rotation.y={rotation}
         on:pointerenter={() => scale.set(1.5)}
         on:pointerleave={() => scale.set(1)}
 />
+
+<!--<Around_the_world_in_80_models_posts-->
+<!--        scale={10}-->
+<!--        position={[0, 0, 0]}-->
+<!--        rotation.y={rotation}-->
+<!--        on:pointerenter={() => scale.set(1.5)}-->
+<!--        on:pointerleave={() => scale.set(1)}-->
+<!--/>-->
 
 <!--  <Planet-->
 <!--          scale={1}-->
